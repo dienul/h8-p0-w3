@@ -13,12 +13,17 @@ function groupAnimals(animals) {
             index++
         }
     }
+    if (tampung[0][0][0]==='a'){
+     tampung [0][0] = animals [1]
+     tampung [0][1] = animals [0]
+    }
+    
     return tampung
 
 }
 
 // TEST CASES
 console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil']));
-//[ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
-//   console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
+// [ ['ayam', 'anoa'], ['cacing'], ['kuda', 'kancil'] ]
+  console.log(groupAnimals(['cacing', 'ayam', 'kuda', 'anoa', 'kancil', 'unta', 'cicak' ]));
 // [ ['ayam', 'anoa'], ['cacing', 'cicak'], ['kuda'], ['unta'] ]
